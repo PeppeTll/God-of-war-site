@@ -1,17 +1,22 @@
 <template>
   <section>
-    <div class="container mx-auto py-8">
+    <div class="container mx-auto py-8 bg-i">
       <div class="text-center text-6xl text-gow">
-        <h1 class="text-transform: uppercase">la saga norrena continua</h1>
+        <h1 class="text-transform: uppercase pb-8">la saga norrena continua</h1>
       </div>
-      <div class="columns-3">
-        <div v-for="(el, i) in cardList" :key="i">
-          <figure>
-            <img :src="el.img" alt="" class="h-80" />
+      <div class="columns-3 text-white">
+        <div
+          v-for="(el, i) in cardList"
+          :key="i"
+          class="p-2"
+          
+        >
+          <figure class="w-full rounded-[20px] overflow-hidden">
+            <img :src="el.img" alt="" class="object-cover object-center" />
           </figure>
-          <div>
-            <h1>{{ el.title }}</h1>
-            <p>{{ el.description }}</p>
+          <div class="flex flex-col font-bold">
+            <h1 class="text-3xl py-5">{{ el.title }}</h1>
+            <p class="text-lg">{{ el.description }}</p>
           </div>
         </div>
       </div>
@@ -49,12 +54,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@font-face {
-  font-family: berserker;
-  src: url(../font/Berserker.ttf);
-}
-
-h1 {
-  font-family: berserker;
+section {
+  background-image: url(../assets/imgGod/section5c-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

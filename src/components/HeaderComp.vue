@@ -8,24 +8,19 @@
           alt=""
         />
       </div>
-      <nav class="flex items-center">
+      <nav class="flex items-center font-bold">
         <ul class="flex gap-2 text-transform: capitalize">
           <li v-for="(el, i) in navList" :key="i">
-            <a :href="el.href"> {{ el.name }} </a>
+            <a :href="el.href" class="text-gow text-lg"> {{ el.name }} </a>
           </li>
         </ul>
       </nav>
     </header>
-    <Jumbo />
   </div>
 </template>
 
 <script>
-import Jumbo from '../components/JumboComp.vue';
 export default {
-  components: {
-    Jumbo
-  },
   data() {
     return {
       navList: [

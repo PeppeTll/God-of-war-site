@@ -19,7 +19,19 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: berserker;
+  src: url(./font/Berserker.ttf);
+}
+
+h1 {
+  font-family: berserker;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: rgb(31,31,31);
+}
 </style>
