@@ -17,54 +17,44 @@
         <div
           v-motion-fade-visible
           class="
-            2xl:flex 
-            2xl:flex-col
+            flex
+            flex-col
+            absolute
+            justify-center
+            items-start
+            text-white
             2xl:gap-10
-            2xl:absolute
             2xl:bottom-10
-            2xl:grow
             2xl:max-w-[25vw]
             2xl:left-[20%]
-            2xl:content-center
-            2xl:items-start
-            2xl:text-white
-            <!-- responsive tablet -->
-            xl:flex 
-            xl:flex-col
+            2xl:text-3xl
             xl:gap-3
-            xl:absolute
             xl:bottom-5
-            xl:grow
             xl:max-w-[25vw]
             xl:left-[20%]
-            xl:content-center
-            xl:items-start
-            xl:text-white
-            
+            xl:text-lg
+            lg:gap-3
+            lg:bottom-2
+            lg:max-w-[20vw]
+            lg:left-[20%]
+            lg:text-base
           "
-          :class="i === 4 ? '2xl:text-black xl:text-black '  : '2xl:text-white xl:text-white'"
+          :class="i === 4 ? '2xl:text-black xl:text-black lg:text-black '  : ''"
           
         >
           <img :src="el.sideImg" alt="" class="max-w-[20vw]" />
-          <h1 class="text-4xl">{{ el.h1 }}</h1>
-          <p class="text-lg">{{ el.p }}</p>
+          <h1 class="">{{ el.h1 }}</h1>
+          <p class="">{{ el.p }}</p>
           <button
             class="
-              2xl:border-2
-              2xl:p-3
-              2xl:font-bold
-              2xl:rounded-full
-              2xl:bg-red-700
-              2xl:border-red-700
-              2xl:cursor-pointer
-              <!-- responsive tablet -->
-              xl:border-2
-              xl:p-3
-              xl:font-bold
-              xl:rounded-full
-              xl:bg-red-700
-              xl:border-red-700
-              xl:cursor-pointer
+              border-2
+              p-2
+              font-bold
+              rounded-full
+              bg-red-700
+              border-red-700
+              cursor-pointer
+              lg:text-base
             "
           >
             {{ el.btn }}
@@ -75,22 +65,18 @@
     <div
       id="cardWrapper"
       class="
-        2xl:py-10
-        2xl:container
-        2xl:mx-auto
-        2xl:flex 
-        2xl:flex-wrap
-        2xl:content-center
-        2xl:items-center
-        <!-- responsive tablet -->
-        xl:container
-        xl:mx-auto
-        xl:flex
-        xl:content-center
-        xl:items-center
-        xl:my-5
-        xl:grow
-
+        container
+        mx-auto
+        flex
+        my-5
+        gap-6
+        row-start-2
+        justify-center
+        items-center
+        lg:flex-wrap
+        xl:gap-x-32
+        2xl:gap-0
+        
       "
     >
       <div

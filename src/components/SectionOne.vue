@@ -4,19 +4,18 @@
       <div class="text-center text-6xl text-gow">
         <h1 class="text-transform: uppercase pb-8">la saga norrena continua</h1>
       </div>
-      <div class="columns-3 text-white">
+      <div class="text-white flex justify-evenly flex-wrap ">
         <div
           v-for="(el, i) in cardList"
           :key="i"
-          class="p-2"
-          
+          class="p-2 2xl:max-w-[500px] xl:max-w-[400px] lg:max-w-[300px]"
         >
           <figure class="w-full rounded-[20px] overflow-hidden">
             <img :src="el.img" alt="" class="object-cover object-center" />
           </figure>
           <div class="flex flex-col font-bold">
-            <h1 class="text-3xl py-5">{{ el.title }}</h1>
-            <p class="text-lg">{{ el.description }}</p>
+            <h1 class="2xl:text-3xl text-xl py-5">{{ el.title }}</h1>
+            <p class="2xl:text-lg text-base">{{ el.description }}</p>
           </div>
         </div>
       </div>
