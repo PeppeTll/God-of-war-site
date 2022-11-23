@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Slider />
     <Jumbo />
     <SectionOne />
     <SectionTwo />
@@ -7,15 +8,17 @@
 </template>
 
 <script>
+import Slider from '../components/SliderComp.vue';
 import Jumbo from '../components/JumboComp.vue';
 import SectionOne from './SectionOne.vue';
 import SectionTwo from './SectionTwo.vue';
 export default {
   name: 'App',
   components: {
+    Slider,
     SectionOne,
     Jumbo,
-    SectionTwo
+    SectionTwo,
   }
 }
 </script>

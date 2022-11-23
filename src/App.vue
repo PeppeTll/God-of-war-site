@@ -19,6 +19,12 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(31,31,31);
+}
 @font-face {
   font-family: berserker;
   src: url(./font/Berserker.ttf);
@@ -30,8 +36,4 @@ h1 {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-  background-color: rgb(31,31,31);
-}
 </style>
