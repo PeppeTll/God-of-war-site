@@ -6,7 +6,10 @@
         v-for="(el, i) in slideList"
         :key="i"
         v-show="i === index"
-        class="w-full m-0 relative"
+        class="
+          w-full 
+          m-0 
+          relative"
       >
         <figure>
           <img :src="el.jumbo" alt="" class="w-full" />
@@ -14,30 +17,54 @@
         <div
           v-motion-fade-visible
           class="
-            flex flex-col
-            gap-10
-            absolute
-            bottom-10
-            max-w-[25vw]
-            left-[20%]
-            content-center
-            items-start
-            text-white
+            2xl:flex 
+            2xl:flex-col
+            2xl:gap-10
+            2xl:absolute
+            2xl:bottom-10
+            2xl:grow
+            2xl:max-w-[25vw]
+            2xl:left-[20%]
+            2xl:content-center
+            2xl:items-start
+            2xl:text-white
+            <!-- responsive tablet -->
+            xl:flex 
+            xl:flex-col
+            xl:gap-3
+            xl:absolute
+            xl:bottom-5
+            xl:grow
+            xl:max-w-[25vw]
+            xl:left-[20%]
+            xl:content-center
+            xl:items-start
+            xl:text-white
+            
           "
-          :class="i === 4 ? 'text-black' : 'text-white'"
+          :class="i === 4 ? '2xl:text-black xl:text-black '  : '2xl:text-white xl:text-white'"
+          
         >
           <img :src="el.sideImg" alt="" class="max-w-[20vw]" />
           <h1 class="text-4xl">{{ el.h1 }}</h1>
           <p class="text-lg">{{ el.p }}</p>
           <button
             class="
-              border-2
-              p-3
-              font-bold
-              rounded-full
-              bg-red-700
-              border-red-700
-              cursor-pointer
+              2xl:border-2
+              2xl:p-3
+              2xl:font-bold
+              2xl:rounded-full
+              2xl:bg-red-700
+              2xl:border-red-700
+              2xl:cursor-pointer
+              <!-- responsive tablet -->
+              xl:border-2
+              xl:p-3
+              xl:font-bold
+              xl:rounded-full
+              xl:bg-red-700
+              xl:border-red-700
+              xl:cursor-pointer
             "
           >
             {{ el.btn }}
@@ -48,12 +75,22 @@
     <div
       id="cardWrapper"
       class="
-        py-10
-        container
-        mx-auto
-        flex flex-wrap
-        content-center
-        items-center
+        2xl:py-10
+        2xl:container
+        2xl:mx-auto
+        2xl:flex 
+        2xl:flex-wrap
+        2xl:content-center
+        2xl:items-center
+        <!-- responsive tablet -->
+        xl:container
+        xl:mx-auto
+        xl:flex
+        xl:content-center
+        xl:items-center
+        xl:my-5
+        xl:grow
+
       "
     >
       <div
